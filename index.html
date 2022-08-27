@@ -60,7 +60,7 @@
       <section class="hero">
           <div class="container hero-container">
             <h1 class="main-title">Effective solutions for your business</h1>
-            <button type="button" class="hero-button">Request our service</button>
+            <button type="button" class="hero-button" data-modal-open>Request our service</button>
           </div>
       </section>
       <!-- Features -->
@@ -131,6 +131,9 @@
                 alt="Developing application"
                 width="370"
               />
+              <div class="features-design">
+                <h3 class="photo-titile">Desktop apps</h3>  
+              </div>
             </li>
             <li class="examples-item">
               <img
@@ -138,6 +141,9 @@
                 alt="Application adaptation"
                 width="370"
               />
+              <div class="features-design">
+                <h3 class="photo-titile">Mobile apps</h3>  
+              </div>
             </li>
             <li class="examples-item">
               <img
@@ -145,6 +151,9 @@
                 alt="Application design"
                 width="370"
               />
+              <div class="features-design">
+                <h3 class="photo-titile">Design solutions</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -455,5 +464,19 @@
               </div>
           </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal-btn is-hedden">
+        <button class="close-modal" data-modal-close>
+          <svg class="close-modal-svg" width="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
